@@ -5,7 +5,8 @@ import LandingPage from './pages/LandingPage'
 import About from './pages/About'
 import Skills from './pages/Skills'
 import Projects from './pages/Projects'
-import Footer from './components/Footer'
+import PingMe from "./pages/PingMe";
+import Breakie from "./pages/Breakie";
 
 function App() {
   return (
@@ -17,8 +18,9 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/skills" element={<Skills />} />
         <Route path="/projects" element={<Projects />} />
+        <Route path="/projects/pingme" element={<PingMe />} />
+        <Route path="/projects/breakie" element={<Breakie />} />
       </Routes>
-      <Footer />
     </Router>
   )
 }

@@ -9,13 +9,14 @@ import {
   FaHtml5,
   FaCss3Alt,
   FaJs,
-  FaReact,
-  FaGitAlt,
+  FaJava,
+  FaPython,
 } from "react-icons/fa";
-import { SiTailwindcss, SiVite } from "react-icons/si";
-import { CgWebsite } from "react-icons/cg";
-import { RiPagesLine } from "react-icons/ri";
-import { GrOptimize } from "react-icons/gr";
+import { SiR, SiTableau } from "react-icons/si";
+import { TbChartBar } from "react-icons/tb";
+import { FaChartBar } from "react-icons/fa";
+import { MdDataObject } from "react-icons/md";
+import { AiOutlineFundProjectionScreen } from "react-icons/ai";
 import { motion } from "framer-motion";
 
 const fadeUp = {
@@ -25,33 +26,34 @@ const fadeUp = {
 
 const Skills = () => {
   const skills = [
-    { icon: <FaHtml5 className="text-orange-500 text-8xl" />, name: "HTML" },
-    { icon: <FaCss3Alt className="text-blue-500 text-8xl" />, name: "CSS" },
+    { icon: <FaPython className="text-blue-500 text-8xl" />, name: "Python" },
+    { icon: <FaJava className="text-red-500 text-8xl" />, name: "Java" },
     { icon: <FaJs className="text-yellow-400 text-8xl" />, name: "JavaScript" },
-    { icon: <FaReact className="text-cyan-400 text-8xl" />, name: "React" },
-    { icon: <SiTailwindcss className="text-sky-400 text-8xl" />, name: "Tailwind CSS" },
-    { icon: <FaGitAlt className="text-orange-600 text-8xl" />, name: "Git" },
-    { icon: <SiVite className="text-purple-500 text-8xl" />, name: "Vite" },
+    { icon: <FaHtml5 className="text-orange-500 text-8xl" />, name: "HTML" },
+    { icon: <FaCss3Alt className="text-blue-400 text-8xl" />, name: "CSS" },
+    { icon: <SiR className="text-sky-600 text-8xl" />, name: "R" },
+    { icon: <SiTableau className="text-blue-700 text-8xl" />, name: "Tableau" },
+    { icon: <TbChartBar className="text-yellow-500 text-8xl" />, name: "Power BI" },
   ];
 
   const services = [
     {
-      icon: <CgWebsite className="text-stone-800 text-6xl mb-4" />,
-      title: "Static Website Development",
+      icon: <FaChartBar className="text-stone-800 text-6xl mb-4" />,
+      title: "Data Analysis & Visualisation",
       description:
-        "Simple, fast-loading, and lightweight websites perfect for portfolios, landing pages, or business profiles.",
+        "Uncovering insights from data and communicating findings through compelling dashboards using Tableau and Power BI.",
     },
     {
-      icon: <RiPagesLine className="text-stone-800 text-6xl mb-4" />,
-      title: "Single-Page Applications",
+      icon: <MdDataObject className="text-stone-800 text-6xl mb-4" />,
+      title: "Data Engineering",
       description:
-        "Modern, app-like web experiences built for speed and smooth navigation.",
+        "Building efficient data pipelines, processing structured and unstructured datasets with Python and Java.",
     },
     {
-      icon: <GrOptimize className="text-stone-800 text-6xl mb-4" />,
-      title: "Website Redesign & Optimization",
+      icon: <AiOutlineFundProjectionScreen className="text-stone-800 text-6xl mb-4" />,
+      title: "Business Analytics",
       description:
-        "Revamping existing sites for better performance, visuals, and usability.",
+        "Applying analytical techniques to support data-driven decisions and optimise business processes.",
     },
   ];
 
@@ -80,11 +82,9 @@ const Skills = () => {
           className="mb-10 text-zinc-600 leading-relaxed max-w-2xl mx-auto text-base md:text-lg"
           style={{ fontFamily: "satoshi-medium" }}
         >
-          I specialize in front-end web development, creating responsive and visually
-          engaging websites using HTML5, CSS3, Tailwind CSS, JavaScript, and React.
-          With Vite for fast builds and Git for version control, I deliver everything
-          from static sites to single-page applications focused on performance,
-          accessibility, and great user experience.
+          I work across a broad tech stack spanning data, analytics, and web development. 
+          From writing Python scripts and R models to building dashboards in Tableau and Power BI,
+          I combine analytical thinking with technical skills to deliver meaningful, data-driven solutions.
         </motion.p>
 
         <Carousel
@@ -142,9 +142,8 @@ const Skills = () => {
             className="mb-10 text-zinc-600 leading-relaxed max-w-2xl mx-auto text-base md:text-lg"
             style={{ fontFamily: "satoshi-medium" }}
           >
-            I create responsive, visually appealing, and user-friendly websites that
-            combine great design with smooth functionality, turning ideas into fast,
-            engaging digital products.
+            I bring together analytical expertise and technical skills to help organisations 
+            understand their data, streamline workflows, and make informed decisions with confidence.
           </motion.p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

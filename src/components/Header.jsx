@@ -77,14 +77,6 @@ const Header = () => {
         </nav>
 
         {/* Desktop Contact Button */}
-        <div className="hidden md:block">
-          <Button
-            onClick={() => setSheetOpen(true)}
-            className="bg-red-300 hover:bg-red-100 transition-all duration-300"
-          >
-            Contact Me
-          </Button>
-        </div>
 
         {/* Mobile Menu Toggle */}
         <div className="md:hidden">
@@ -127,82 +119,7 @@ const Header = () => {
         </div>
       )}
 
-      {/* Contact Sheet */}
-      <Sheet open={sheetOpen} onOpenChange={setSheetOpen}>
-        <SheetContent side="right" className="bg-red-50">
-          <SheetHeader>
-            <SheetTitle className="text-2xl px-4 mt-10 text-stone-800" style={{fontFamily: 'satoshi-bold'}}>
-              Get in Touch
-            </SheetTitle>
-          </SheetHeader>
-          <div className="px-10 space-y-4" style={{ fontFamily: "satoshi-medium" }}>
-            {/* Email */}
-            <div className="flex items-center gap-3">
-              <MdEmail className="text-rose-500" size={20} />
-              <span className="text-zinc-700">pantinoplerachelle16@gmail.com</span>
-            </div>
-          
-            {/* Phone */}
-            <div className="flex items-center gap-3">
-              <MdPhone className="text-rose-500" size={20} />
-              <span className="text-zinc-700">+63 951 490 8319</span>
-            </div>
-          
-            {/* Location */}
-            <div className="flex items-center gap-3">
-              <MdLocationOn className="text-rose-500" size={20} />
-              <span className="text-zinc-700">Rizal, Philippines</span>
-            </div>
-          
-            {/* Social Links */}
-            <div className="pt-4 mt-20 border-t border-rose-200">
-              <h4 className="text-stone-800 mb-3" style={{fontFamily: 'satoshi-bold'}}>Social Media</h4>
-              <div className="flex gap-4">
-                <a
-                  href="https://www.facebook.com/rachellep16"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="p-2 rounded-full bg-white shadow hover:bg-rose-100 transition-colors"
-                >
-                  <FaFacebookF className="text-rose-500" size={20} />
-                </a>
-                <a
-                  href="https://github.com/rchll-16"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="p-2 rounded-full bg-white shadow hover:bg-rose-100 transition-colors"
-                >
-                  <FaGithub className="text-rose-500" size={20} />
-                </a>
-                <a
-                  href="https://www.linkedin.com/in/pantinople-rachelle-a-165028246/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="p-2 rounded-full bg-white shadow hover:bg-rose-100 transition-colors"
-                >
-                  <FaLinkedinIn className="text-rose-500" size={20} />
-                </a>
-                <a 
-                  href="https://www.instagram.com/qwrty_rchll/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="p-2 rounded-full bg-white shadow hover:bg-rose-100 transition-colors"
-                >
-                  <FaInstagram className="text-rose-500" size={20} />
-                </a>
-                <a 
-                  href="https://www.tiktok.com/@qwerty_dev  "
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="p-2 rounded-full bg-white shadow hover:bg-rose-100 transition-colors"
-                >
-                  <FaTiktok className="text-rose-500" size={20} />
-                </a>
-              </div>
-            </div>
-          </div>
-        </SheetContent>
-      </Sheet>
+      
     </header>
   );
 };

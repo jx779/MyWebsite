@@ -1,98 +1,41 @@
 import React from "react";
-import rapidImg from "../assets/rapid.png"
-import molaveImg from "../assets/molave.png"
-import flowerShopImg from "../assets/flowershop.png";
-import ecBookstoreImg from "../assets/ecbookstore.jpg";
-import clothingImg from "../assets/clothing.png";
-import school1Img from "../assets/school1.png";
-import school2Img from "../assets/school2.png";
-import intraImg from "../assets/intra.png";
-import scienceImg from "../assets/science.png";
-import biniImg from "../assets/bini.png";
+import pingMeImg from "../assets/PingMeIcon.png";
+import breakieImg from "../assets/BreakieIcon.png";
+import datathonImg from "../assets/Datathon.png";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
 const Projects = () => {
   const projects = [
     {
-      title: "Molave Street Barbers (Capstone Project)",
+      title: "PingMe – Location-Based Reminder App",
       description:
-        "A modern, responsive website built as a capstone project for Molave Street Barbers. The site features a clean design, service showcases, and intuitive navigation—focused on delivering a polished user experience across desktop and mobile devices.",
-      image: molaveImg,
-      link: "https://molavestreetbarbers.vercel.app/",
-      tech: ["React+Vite", "JavaScript", "Tailwind CSS", "HTML", "Supabase"],
-    },
-
-    {
-      title: "Rapid Solutions Website (Commission)",
-      description:
-        "A professional and fully responsive corporate website developed for Rapido Solutions. Designed to clearly present the company’s services, brand identity, and contact information with a clean layout and smooth user experience across all devices.",
-      image: rapidImg,
-      link: "https://rapidosolutions.tech/",
-      tech: ["HTML", "Tailwind CSS", "JavaScript", "React+Vite", "Supabase"],
+        "A cross-platform mobile app that triggers reminders based on your location. Features secure user authentication, cloud data management via Firebase, Google Maps API integration, Expo Push Notifications, and Gemini 2.0 Flash AI.",
+      image: pingMeImg,
+      isCover: false,
+      repoLink: "https://github.com/jx779/orbital",
+      projectPage: "/projects/pingme",
+      tech: ["React Native", "Firebase", "Google Maps API", "Gemini AI", "Expo"],
     },
     {
-      title: "Flower Shop Website",
+      title: "Breakie – Gamified Chrome Extension",
       description:
-        "The Flower Shop is a static website designed to showcase a variety of flowers available for purchase. This website provides users with an easy-to-navigate interface to explore different flower types, view details, and make inquiries.",
-      image: flowerShopImg,
-      link: "https://rchll-16.github.io/Flower-Shop/",
-      tech: ["HTML", "CSS", "JavaScript"],
+        "A gamified Chrome extension that tracks focus sessions, breaks, and in-game rewards to encourage consistent study habits. Features 2-player mini-games, timer logic, and progress tracking.",
+      image: breakieImg,
+      isCover: false,
+      repoLink: "https://github.com/jx779/hack-and-roll",
+      projectPage: "/projects/breakie",
+      tech: ["HTML", "CSS", "JavaScript", "Chrome Extensions API"],
     },
     {
-      title: "E-Commerce Web App",
+      title: "NUS Datathon – AI Analytics Prototype",
       description:
-        "An E-Commerce bookstore web application where users can browse, search, and purchase books online.  Built with React, Node.js, and MongoDB — providing a smooth, and dynamic shopping experience.",
-      image: ecBookstoreImg,
-      link: "https://github.com/rchll-16/e-commerce",
-      tech: ["JavaScript", "React", "NodeJS", "MongoDB"],
-    },
-    {
-      title: "Clothing Website (Commision)",
-      description:
-        "A clean, responsive, and user-friendly clothing site built with HTML and CSS. This static web project showcases a landing page, FAQ section, and styling using custom CSS.",
-      image: clothingImg,
-      link: "https://rchll-16.github.io/clothingwebsite/main.html",
-      tech: ["HTML", "CSS"],
-    },
-    {
-      title: "School Website 1 (Commision)",
-      description:
-        "A clean, informative, and fully responsive school website crafted with HTML and CSS. Featuring multiple pages—Home, About, Academic Programs, Offers, Contacts—this static site is perfect for informational or portfolio use.",
-      image: school1Img,
-      link: "https://rchll-16.github.io/school-aaa/",
-      tech: ["HTML", "CSS"],
-    },
-    {
-      title: "School Website 2 (Commision)",
-      description:
-        "A clean, responsive, and informative school website built using HTML and CSS. Ideal for institutional presentation, this static site includes pages for home, about, academic programs, events, and contact details.",
-      image: school2Img,
-      link: "https://rchll-16.github.io/school-uep/",
-      tech: ["HTML", "CSS"],
-    },
-    {
-      title: "Intramuros Cultural Website (Commision)",
-      description:
-        "A beautifully designed, static website showcasing the heritage sites of Intramuros using HTML, CSS, and high-quality images. Perfect for both educational presentation and visual storytelling of historical landmarks.",
-      image: intraImg,
-      link: "https://rchll-16.github.io/intramuros-website/",
-      tech: ["HTML", "CSS"],
-    },
-    {
-      title: "Science Lesson Website (Commision)",
-      description:
-        "A clean, educational website designed to present various science topics using HTML and CSS. Perfect for sharing lesson modules such as the water cycle, biodiversity, pollution, and more in a readable, structured format.",
-      image: scienceImg,
-      link: "https://rchll-16.github.io/science-lesson/main.html",
-      tech: ["HTML", "CSS"],
-    },
-    {
-      title: "Bini Redesign",
-      description:
-        "A clean, modern redesign project for BINI, focusing on visually appealing layout, responsive design, and smooth user experience. Built entirely with HTML, CSS, and JavaScript — no frameworks, just handcrafted code.",
-      image: biniImg,
-      link: "https://rchll-16.github.io/bini-redesign/main.html",
-      tech: ["HTML", "CSS", "JavaScript"],
+        "An AI-driven analytics prototype built for the NUS Datathon that extracts actionable insights from company-level data. Involved data cleaning, preprocessing, feature engineering, and LLMs to generate business summaries.",
+      image: datathonImg,
+      isCover: true,
+      repoLink: null, // No repo button for datathon
+      projectPage: "https://docs.google.com/document/d/1omE1LkNlLBZnlyiZ32HrW0E_sI-mUgf43tGplETgzNM/edit?tab=t.0#heading=h.hm0fgas91qi",
+      tech: ["Python", "Machine Learning", "LLMs", "Pandas", "NLP"],
     },
   ];
 
@@ -117,26 +60,39 @@ const Projects = () => {
           transition={{ duration: 0.6, delay: 0.2 }}
         >
           Here are some of the projects I've worked on, showcasing my skills in
-          creating functional, visually appealing, and user-friendly websites.
+          mobile development, data analytics, and software engineering.
         </motion.p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <motion.div
               key={index}
-              className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow"
+              className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow flex flex-col"
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.2 }}
               viewport={{ once: true }}
               whileHover={{ scale: 1.03 }}
             >
-              <img
-                src={project.image}
-                alt={project.title}
-                className="w-full h-48 object-cover"
-              />
-              <div className="p-6 text-left">
+              {/* Project image / logo */}
+              {project.image ? (
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className={`w-full h-48 ${project.isCover ? "object-cover" : "object-contain p-4 bg-white"}`}
+                />
+              ) : (
+                <div className="w-full h-48 bg-orange-100 flex flex-col items-center justify-center gap-2">
+                  <div className="w-16 h-16 rounded-full bg-orange-200 border-2 border-dashed border-orange-400 flex items-center justify-center text-orange-400 text-2xl">
+                    +
+                  </div>
+                  <p className="text-stone-400 text-xs" style={{ fontFamily: "satoshi-medium" }}>
+                    Add project logo
+                  </p>
+                </div>
+              )}
+
+              <div className="p-6 text-left flex flex-col flex-1">
                 <h3
                   className="text-xl font-semibold text-stone-800 mb-2"
                   style={{ fontFamily: "satoshi-bold" }}
@@ -159,15 +115,28 @@ const Projects = () => {
                     </span>
                   ))}
                 </div>
-                <a
-                  href={project.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block bg-rose-300 border border-stone-800 text-stone-800 px-4 py-2 rounded-sm text-sm font-semibold hover:bg-rose-400 transition-colors"
-                  style={{ fontFamily: "satoshi-medium" }}
-                >
-                  Live Site
-                </a>
+
+                {/* Buttons — pushed to bottom */}
+                <div className="flex flex-wrap gap-2 mt-auto pt-2">
+                  {project.repoLink && (
+                    <a
+                      href={project.repoLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-block bg-white border border-stone-800 text-stone-800 px-4 py-2 rounded-sm text-sm font-semibold hover:bg-stone-100 transition-colors"
+                      style={{ fontFamily: "satoshi-medium" }}
+                    >
+                      View Repository
+                    </a>
+                  )}
+                  <Link
+                    to={project.projectPage}
+                    className="inline-block bg-rose-300 border border-stone-800 text-stone-800 px-4 py-2 rounded-sm text-sm font-semibold hover:bg-rose-400 transition-colors"
+                    style={{ fontFamily: "satoshi-medium" }}
+                  >
+                    View Project
+                  </Link>
+                </div>
               </div>
             </motion.div>
           ))}

@@ -21,7 +21,7 @@ const LandingPage = () => {
           transition={{ duration: 1 }}
         >
           <h1 className="text-3xl sm:text-4xl md:text-5xl text-stone-800 mb-4" style={{fontFamily: 'satoshi-black'}}>
-            Hi, I’m Rachelle Pantinople
+            Hi, I’m Siah Jia Xuan
           </h1>
 
           <p className="text-xl sm:text-2xl md:text-3xl text-stone-800 mb-6" style={{fontFamily: 'satoshi-medium'}}>
@@ -29,7 +29,11 @@ const LandingPage = () => {
             <span className="ml-2 block sm:inline">
               <TypeAnimation
                 sequence={[
-                  'Frontend Developer',
+                  'Business Analyst',
+                  2000,
+                  '',
+                  1000,
+                  'Data Engineer',
                   2000,
                   '',
                   1000,
@@ -46,7 +50,7 @@ const LandingPage = () => {
             className="mt-4 text-lg text-stone-700 italic" 
             style={{ fontFamily: 'satoshi-medium' }}
           >
-            Your vision, my code.
+            Turning data into decisions.
           </p>
 
           <Link 
@@ -68,7 +72,7 @@ const LandingPage = () => {
         >
           <img
             src={profileImg}
-            alt="Rachelle Pantinople"
+            alt="Siah Jia Xuan"
             className="w-80 h-auto object-cover drop-shadow-[15px_15px_0px_black] rounded-lg md:ml-8"
           />
         </motion.div>
@@ -95,9 +99,9 @@ const LandingPage = () => {
         {/* Highlights */}
         <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {[ 
-            { icon: <FaLaptopCode size={70} />, title: 'Clean & Semantic Code', desc: 'Writing well-structured, semantic HTML and React components for maintainable codebases.' },
-            { icon: <MdStyle size={70} />, title: 'Modern UI Styling', desc: 'Crafting visually appealing interfaces using Tailwind CSS and responsive design principles.' },
-            { icon: <TbComponents size={70} />, title: 'Interactive Components', desc: 'Building dynamic, user-friendly components with React and UI libraries.' }
+            { icon: <FaLaptopCode size={70} />, title: 'Data Analytics', desc: 'Transforming raw data into actionable insights using Python, R, Tableau, and Power BI.' },
+            { icon: <MdStyle size={70} />, title: 'Data Engineering', desc: 'Building robust data pipelines and backend solutions with Python and Java.' },
+            { icon: <TbComponents size={70} />, title: 'Web Development', desc: 'Creating interactive web applications with JavaScript, HTML, and CSS.' }
           ].map((item, index) => (
             <motion.div
               key={index}

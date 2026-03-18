@@ -16,7 +16,7 @@ const About = () => {
       >
         <img
           src={myImg}
-          alt="Rachelle Pantinople"
+          alt="Siah Jia Xuan"
           className="w-90 md:w-94 h-90 md:h-94 object-cover border-7 border-stone-900 rounded-full shadow-lg"
         />
       </motion.div>
@@ -39,20 +39,27 @@ const About = () => {
           className="text-zinc-600 leading-relaxed mb-6"
           style={{ fontFamily: 'satoshi-medium' }}
         >
-          Hi! I'm <span className="font-semibold text-stone-800">Rachelle Pantinople</span>, 
-          an aspiring frontend developer passionate about crafting clean, 
-          user-friendly, and responsive web applications. I love transforming 
-          ideas into functional designs using HTML, CSS, JavaScript, React, 
-          and Tailwind CSS. My goal is to create experiences that are not only 
-          visually appealing but also intuitive to use.
+          Hi! I'm <span className="font-semibold text-stone-800">Siah Jia Xuan</span>, 
+          a <span className="font-semibold text-stone-800">Business Analytics</span> student at NUS with a minor in Quantitative Finance. 
+          I am currently pursuing a double specialisatoin in <span className="font-semibold text-stone-800">Machine Learning</span> and <span className="font-semibold text-stone-800">Finance</span>. 
+          </p>
+
+        <p
+          className="text-zinc-600 leading-relaxed mb-6"
+          style={{ fontFamily: 'satoshi-medium' }}
+        >
+          I have a passion for turning complex data into 
+          clear, actionable insights. I enjoy working across the data stack — from engineering 
+          pipelines to analysing trends and visualising results — to support smarter, data-driven 
+          decision-making.
         </p>
         <p
           className="text-zinc-600 leading-relaxed mb-6"
           style={{ fontFamily: 'satoshi-medium' }}
         >
           I’m continuously learning and exploring new tools and frameworks 
-          to improve my skills. Beyond coding, I enjoy listening to music 
-          and gaming — activities that inspire creativity and problem-solving.
+          to improve my skills. Beyond coding, I am involved in various leadership roles and initiatives in NUS such as 
+          being a part of Eusoff Hall Promotion Board and Hall Relations Board. I am also a Basketball and Volleyball player.
         </p>
 
         {/* Highlights Section */}
@@ -67,9 +74,9 @@ const About = () => {
           viewport={{ once: true }}
         >
           {[
-            { title: "Frontend Dev", desc: "Skilled in React, Tailwind CSS, and modern UI principles." },
-            { title: "Responsive Design", desc: "Creating layouts that work on all devices." },
-            { title: "Creative Coding", desc: "Blending creativity with technical skills for unique solutions." }
+            { title: "Business Analytics", desc: "Extracting insights from data to drive business value at NUS." },
+            { title: "Data Engineering", desc: "Building scalable pipelines and backend systems with Python & Java." },
+            { title: "Data Visualisation", desc: "Communicating stories through Tableau, Power BI, and R." }
           ].map((item, i) => (
             <motion.div
               key={i}
