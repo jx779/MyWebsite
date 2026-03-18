@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import img1 from "../assets/pomodoro.jpg";
 import img2 from "../assets/games.jpg";
 import img3 from "../assets/flappybird.jpg";
-import img4 from "../assets/snake.jpg";
+import img4 from "../assets/Snake.jpg";
 import img5 from "../assets/tetris.jpg";
 import img6 from "../assets/2048.jpg";
 import appIcon from "../assets/BreakieIcon.png";
