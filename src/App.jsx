@@ -6,7 +6,7 @@ import About from './pages/About'
 import Skills from './pages/Skills'
 import Projects from './pages/Projects'
 import PingMe from "./pages/PingMe";
-import Breakie from "./pages/Breakie";
+import Breakie from "./pages/breakie";
 
 function App() {
   return (
