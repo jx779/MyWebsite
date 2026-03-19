@@ -33,7 +33,7 @@ const Projects = () => {
         "An AI-driven analytics prototype built for the NUS Datathon that extracts actionable insights from company-level data. Involved data cleaning, preprocessing, feature engineering, and LLMs to generate business summaries.",
       image: datathonImg,
       isCover: true,
-      repoLink: null, // No repo button for datathon
+      repoLink: null,
       projectPage: "https://docs.google.com/document/d/1omE1LkNlLBZnlyiZ32HrW0E_sI-mUgf43tGplETgzNM/edit?tab=t.0#heading=h.hm0fgas91qi",
       tech: ["Python", "Machine Learning", "LLMs", "Pandas", "NLP"],
     },
@@ -129,13 +129,25 @@ const Projects = () => {
                       View Repository
                     </a>
                   )}
-                  <Link
-                    to={project.projectPage}
-                    className="inline-block bg-rose-300 border border-stone-800 text-stone-800 px-4 py-2 rounded-sm text-sm font-semibold hover:bg-rose-400 transition-colors"
-                    style={{ fontFamily: "satoshi-medium" }}
-                  >
-                    View Project
-                  </Link>
+                  {project.projectPage.startsWith("http") ? (
+                    <a
+                      href={project.projectPage}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-block bg-rose-300 border border-stone-800 text-stone-800 px-4 py-2 rounded-sm text-sm font-semibold hover:bg-rose-400 transition-colors"
+                      style={{ fontFamily: "satoshi-medium" }}
+                    >
+                      View Project
+                    </a>
+                  ) : (
+                    <Link
+                      to={project.projectPage}
+                      className="inline-block bg-rose-300 border border-stone-800 text-stone-800 px-4 py-2 rounded-sm text-sm font-semibold hover:bg-rose-400 transition-colors"
+                      style={{ fontFamily: "satoshi-medium" }}
+                    >
+                      View Project
+                    </Link>
+                  )}
                 </div>
               </div>
             </motion.div>

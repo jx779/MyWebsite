@@ -73,7 +73,7 @@ const LandingPage = () => {
           <img
             src={profileImg}
             alt="Siah Jia Xuan"
-            className="w-80 h-auto object-cover drop-shadow-[15px_15px_0px_black] rounded-lg md:ml-8"
+            className="w-130 h-auto object-cover drop-shadow-[15px_15px_0px_black] rounded-lg md:ml-8"
           />
         </motion.div>
       </section>

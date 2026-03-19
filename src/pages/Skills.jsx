@@ -37,25 +37,25 @@ const Skills = () => {
   ];
 
   const services = [
-    {
-      icon: <FaChartBar className="text-stone-800 text-6xl mb-4" />,
-      title: "Data Analysis & Visualisation",
-      description:
-        "Uncovering insights from data and communicating findings through compelling dashboards using Tableau and Power BI.",
-    },
-    {
-      icon: <MdDataObject className="text-stone-800 text-6xl mb-4" />,
-      title: "Data Engineering",
-      description:
-        "Building efficient data pipelines, processing structured and unstructured datasets with Python and Java.",
-    },
-    {
-      icon: <AiOutlineFundProjectionScreen className="text-stone-800 text-6xl mb-4" />,
-      title: "Business Analytics",
-      description:
-        "Applying analytical techniques to support data-driven decisions and optimise business processes.",
-    },
-  ];
+  {
+    icon: <MdDataObject className="text-stone-800 text-6xl mb-4" />,
+    title: "Data Engineering",
+    description:
+      "Transforming raw, unstructured data into structured, reliable datasets through cleaning and feature engineering.",
+  },
+  {
+    icon: <AiOutlineFundProjectionScreen className="text-stone-800 text-6xl mb-4" />,
+    title: "Data Science",
+    description:
+      "Leveraging machine learning to predict trends, build algorithms, and uncover insights.",
+  },
+  {
+    icon: <FaChartBar className="text-stone-800 text-6xl mb-4" />,
+    title: "Data Analytics & Visualization",
+    description:
+      "Presenting clear, actionable insights through compelling visuals for clients.",
+  },
+];
 
   return (
     <>
@@ -82,9 +82,8 @@ const Skills = () => {
           className="mb-10 text-zinc-600 leading-relaxed max-w-2xl mx-auto text-base md:text-lg"
           style={{ fontFamily: "satoshi-medium" }}
         >
-          I work across a broad tech stack spanning data, analytics, and web development. 
-          From writing Python scripts and R models to building dashboards in Tableau and Power BI,
-          I combine analytical thinking with technical skills to deliver meaningful, data-driven solutions.
+          I work across a broad tech stack spanning across data engineering, analytics and web development.
+          From building efficient data pipelines to developing responsive websites and dynamic dashboards, I deliver high-impact, data-driven results.
         </motion.p>
 
         <Carousel
@@ -142,8 +141,7 @@ const Skills = () => {
             className="mb-10 text-zinc-600 leading-relaxed max-w-2xl mx-auto text-base md:text-lg"
             style={{ fontFamily: "satoshi-medium" }}
           >
-            I bring together analytical expertise and technical skills to help organisations 
-            understand their data, streamline workflows, and make informed decisions with confidence.
+            
           </motion.p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
